@@ -2,6 +2,9 @@
 /**
  * Prepare the test setup.
  */
+namespace Horde\Vcs;
+use Horde_Vcs_TestBase;
+
 require_once __DIR__ . '/TestBase.php';
 
 /**
@@ -12,9 +15,9 @@ require_once __DIR__ . '/TestBase.php';
  * @subpackage UnitTests
  */
 
-class Horde_Vcs_SvnTest extends Horde_Vcs_TestBase
+class SvnTest extends Horde_Vcs_TestBase
 {
-    public function setUp()
+    public function setUp(): void
     {
         if (!self::$conf) {
             $this->markTestSkipped('No test configuration');
