@@ -3,9 +3,6 @@
  * Prepare the test setup.
  */
 namespace Horde\Vcs;
-use \Horde_Vcs_TestBase;
-
-require_once __DIR__ . '/TestBase.php';
 
 /**
  * @author     Jan Schneider <jan@horde.org>
@@ -15,7 +12,7 @@ require_once __DIR__ . '/TestBase.php';
  * @subpackage UnitTests
  */
 
-class CvsTest extends Horde_Vcs_TestBase
+class CvsTest extends TestBase
 {
     public function setUp(): void
     {

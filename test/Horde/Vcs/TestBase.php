@@ -6,8 +6,10 @@
  * @package    Vcs
  * @subpackage UnitTests
  */
+namespace Horde\Vcs;
+use Horde_Test_Case as TestCase;
 
-class Horde_Vcs_TestBase extends Horde_Test_Case
+class TestBase extends TestCase
 {
     static $conf;
 
